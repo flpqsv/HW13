@@ -36,6 +36,7 @@ namespace HW13
         private static readonly By _swapButton = By.XPath("//div[@class='swap']");
         private static readonly By _onePlayerIcon = By.CssSelector("[class='p1']");
         private static readonly By _twoPlayersIcon = By.CssSelector("[class='p2']");
+        private static readonly By _twoPlayersMode = By.CssSelector("[class='scores p1']");
 
         public PageObject(IWebDriver webDriver)
         {
@@ -54,7 +55,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetTopLeftStatus()
+        public bool IsTopLeftMarked()
         {
             var isMarked = _webDriver.FindElement(_topLeftMarked).Displayed;
             return isMarked;
@@ -66,7 +67,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetTopStatus()
+        public bool IsTopMarked()
         {
             var isMarked = _webDriver.FindElement(_topMarked).Displayed;
             return isMarked;
@@ -78,7 +79,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetTopRightStatus()
+        public bool IsTopRightMarked()
         {
             var isMarked = _webDriver.FindElement(_topRightMarked).Displayed;
             return isMarked;
@@ -90,7 +91,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetLeftStatus()
+        public bool IsLeftMarked()
         {
             var isMarked = _webDriver.FindElement(_leftMarked).Displayed;
             return isMarked;
@@ -102,7 +103,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetCentralStatus()
+        public bool IsCentralMarked()
         {
             var isMarked = _webDriver.FindElement(_centralMarked).Displayed;
             return isMarked;
@@ -114,7 +115,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetRightStatus()
+        public bool IsRightMarked()
         {
             var isMarked = _webDriver.FindElement(_rightMarked).Displayed;
             return isMarked;
@@ -126,7 +127,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetBottomLeftStatus()
+        public bool IsBottomLeftMarked()
         {
             var isMarked = _webDriver.FindElement(_bottomLeftMarked).Displayed;
             return isMarked;
@@ -138,7 +139,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetBottomStatus()
+        public bool IsBottomMarked()
         {
             var isMarked = _webDriver.FindElement(_bottomMarked).Displayed;
             return isMarked;
@@ -150,7 +151,7 @@ namespace HW13
             return this;
         }
 
-        public bool GetBottomRightStatus()
+        public bool IsBottomRightMarked()
         {
             var isMarked = _webDriver.FindElement(_bottomRightMarked).Displayed;
             return isMarked;
@@ -180,21 +181,21 @@ namespace HW13
             return this;
         }
 
-        public bool GetPlayer1()
+        public bool IsPlayer1IconDisplayed()
         {
             var player = _webDriver.FindElement(_onePlayerIcon).Displayed;
             return player;
         }
 
-        public bool GetPlayer2()
+        public bool IsPlayer2IconDisplayed()
         {
             var player = _webDriver.FindElement(_twoPlayersIcon).Displayed;
             return player;
         }
 
-        public bool GetNumberOfPlayers()
+        public bool AreTwoPlayersModeEnabled()
         {
-            var number = _webDriver.FindElement(By.CssSelector("[class='scores p1']")).Enabled;
+            var number = _webDriver.FindElement(_twoPlayersMode).Enabled;
             return number;
         }
     }

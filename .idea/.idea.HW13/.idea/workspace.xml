@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9e28069-78b6-46b6-9355-6d365d849757" name="Default Changelist" comment="">
+    <list default="true" id="e9e28069-78b6-46b6-9355-6d365d849757" name="Default Changelist" comment="Updated">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HW13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HW13/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW13.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/HW13.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/PageObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/PageObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW13/ScoreTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/ScoreTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW13/SquareTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/SquareTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -53,8 +54,16 @@
       <option name="presentableId" value="Default" />
       <updated>1620307334092</updated>
       <workItem from="1620307360345" duration="5195000" />
-      <workItem from="1620381655747" duration="6608000" />
+      <workItem from="1620381655747" duration="8212000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated">
+      <created>1620393218674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620393218674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,6 +73,8 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1384" y="525" key="Github.ShareDialog" timestamp="1620390027797">
@@ -74,5 +85,9 @@
       <screen x="0" y="23" width="2560" height="1293" />
     </state>
     <state x="1262" y="334" key="Github.UntrackedFilesDialog/0.23.2560.1293@0.23.2560.1293" timestamp="1620390048308" />
+    <state x="1108" y="348" key="Vcs.Push.Dialog.v2" timestamp="1620393227910">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state x="1108" y="348" key="Vcs.Push.Dialog.v2/0.23.2560.1293@0.23.2560.1293" timestamp="1620393227910" />
   </component>
 </project>

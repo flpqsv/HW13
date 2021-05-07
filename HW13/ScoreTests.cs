@@ -30,7 +30,7 @@ namespace HW13
         {
             _pageObject.OpenPage();
             
-            Assert.True(_pageObject.GetNumberOfPlayers());
+            Assert.True(_pageObject.AreTwoPlayersModeEnabled());
         }
 
         [Test]
@@ -40,8 +40,8 @@ namespace HW13
             
             Assert.Multiple(() =>
             {
-                Assert.True(_pageObject.GetPlayer1()); 
-                Assert.False(_pageObject.GetPlayer2());
+                Assert.True(_pageObject.IsPlayer1IconDisplayed()); 
+                Assert.False(_pageObject.IsPlayer2IconDisplayed());
             });
         }
 
@@ -82,7 +82,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickSwapButton();
             
-            Assert.True(_pageObject.GetPlayer2());
+            Assert.True(_pageObject.IsPlayer2IconDisplayed());
         }
     }
 }

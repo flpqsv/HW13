@@ -31,7 +31,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickTopLeft();
 
-            Assert.True(_pageObject.GetTopLeftStatus());
+            Assert.True(_pageObject.IsTopLeftMarked());
         }
         
         [Test]
@@ -40,7 +40,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickTop();
 
-            Assert.True(_pageObject.GetTopStatus());
+            Assert.True(_pageObject.IsTopMarked());
         }
         
         [Test]
@@ -49,7 +49,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickTopRight();
 
-            Assert.True((_pageObject.GetTopRightStatus()));
+            Assert.True((_pageObject.IsTopRightMarked()));
         }
         
         [Test]
@@ -58,7 +58,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickLeft();
 
-            Assert.True(_pageObject.GetLeftStatus());
+            Assert.True(_pageObject.IsLeftMarked());
         }
         
         [Test]
@@ -67,7 +67,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickCentral();
 
-            Assert.True(_pageObject.GetCentralStatus());
+            Assert.True(_pageObject.IsCentralMarked());
         }
         
         [Test]
@@ -76,7 +76,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickRight();
 
-            Assert.True(_pageObject.GetRightStatus());
+            Assert.True(_pageObject.IsRightMarked());
         }
         
         [Test]
@@ -85,7 +85,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickBottomLeft();
 
-            Assert.True(_pageObject.GetBottomLeftStatus());
+            Assert.True(_pageObject.IsBottomLeftMarked());
         }
         
         [Test]
@@ -94,7 +94,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickBottom();
 
-            Assert.True(_pageObject.GetBottomStatus());
+            Assert.True(_pageObject.IsBottomMarked());
         }
         
         [Test]
@@ -103,7 +103,7 @@ namespace HW13
             _pageObject.OpenPage()
                 .ClickBottomRight();
 
-            Assert.True(_pageObject.GetBottomRightStatus());
+            Assert.True(_pageObject.IsBottomRightMarked());
         }
     }
 }
