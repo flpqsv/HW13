@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9e28069-78b6-46b6-9355-6d365d849757" name="Default Changelist" comment="" />
+    <list default="true" id="e9e28069-78b6-46b6-9355-6d365d849757" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HW13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HW13/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/HW13.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/ScoreTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/ScoreTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/SquareTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/SquareTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../HW12/SeleniumTests/AccountSettingsTests.cs" root0="SKIP_HIGHLIGHTING" />
@@ -14,13 +26,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HW13/SquareTests.cs" />
         <option value="$PROJECT_DIR$/HW13/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/HW13/ScoreTests.cs" />
+        <option value="$PROJECT_DIR$/HW13/SquareTests.cs" />
+        <option value="$PROJECT_DIR$/HW13/PageObject.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1sAF8sJZXnd1OJrhH1pAFYmS4MZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620307334092</updated>
       <workItem from="1620307360345" duration="5195000" />
-      <workItem from="1620381655747" duration="3688000" />
+      <workItem from="1620381655747" duration="6608000" />
     </task>
     <servers />
   </component>
@@ -50,5 +64,15 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1384" y="525" key="Github.ShareDialog" timestamp="1620390027797">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state x="1384" y="525" key="Github.ShareDialog/0.23.2560.1293@0.23.2560.1293" timestamp="1620390027797" />
+    <state x="1262" y="334" key="Github.UntrackedFilesDialog" timestamp="1620390048308">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state x="1262" y="334" key="Github.UntrackedFilesDialog/0.23.2560.1293@0.23.2560.1293" timestamp="1620390048308" />
   </component>
 </project>

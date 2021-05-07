@@ -16,6 +16,7 @@
             </e>
           </e>
         </e>
+        <e p="PageObject.cs" t="Include" />
         <e p="ScoreTests.cs" t="Include" />
         <e p="SquareTests.cs" t="Include" />
       </e>
