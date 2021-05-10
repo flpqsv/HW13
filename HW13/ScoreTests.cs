@@ -3,12 +3,13 @@ using System.Threading;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Interactions;
 
 namespace HW13
 { public class ScoresTests
     {
         private IWebDriver _webDriver;
-        private PageObject _pageObject;
+        private TicTacToePageObject _ticTacToePageObject;
         
         [SetUp]
         public void Setup()
@@ -16,7 +17,7 @@ namespace HW13
             _webDriver = new ChromeDriver("/Users/MaBelle/Downloads/");
             _webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(7);
             _webDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
-            _pageObject = new PageObject(_webDriver);
+            _ticTacToePageObject = new TicTacToePageObject(_webDriver);
         }
         
         [TearDown]
@@ -28,61 +29,71 @@ namespace HW13
         [Test]
         public void CheckDefaultNumberOfPlayers()
         {
-            _pageObject.OpenPage();
+            _ticTacToePageObject.OpenPage();
             
-            Assert.True(_pageObject.AreTwoPlayersModeEnabled());
+            Assert.True(_ticTacToePageObject.AreTwoPlayersModeEnabled());
         }
 
         [Test]
         public void CheckDefaultPlayer()
         {
-            _pageObject.OpenPage();
+            _ticTacToePageObject.OpenPage();
             
             Assert.Multiple(() =>
             {
-                Assert.True(_pageObject.IsPlayer1IconDisplayed()); 
-                Assert.False(_pageObject.IsPlayer2IconDisplayed());
+                Assert.True(_ticTacToePageObject.IsPlayer1IconDisplayed()); 
+                Assert.False(_ticTacToePageObject.IsPlayer2IconDisplayed());
             });
         }
 
         [Test]
         public void CheckDefaultScorePlayer1()
         {
-            _pageObject.OpenPage();
+            _ticTacToePageObject.OpenPage();
             
             var expected = "0";
-            var actual = _pageObject.GetScorePlayer1();
             
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, _ticTacToePageObject.GetScorePlayer1());
         }
         
         [Test]
         public void CheckDefaultScoreTies()
         {
-            _pageObject.OpenPage();
+            _ticTacToePageObject.OpenPage();
             
             var expected = "0";
             
-            Assert.AreEqual(expected, _pageObject.GetScoreTies());
+            Assert.AreEqual(expected, _ticTacToePageObject.GetScoreTies());
         }
         
         [Test]
         public void CheckDefaultScorePlayer2()
         {
-            _pageObject.OpenPage();
+            _ticTacToePageObject.OpenPage();
             
             var expected = "0";
             
-            Assert.AreEqual(expected, _pageObject.GetScorePlayer2());
+            Assert.AreEqual(expected, _ticTacToePageObject.GetScorePlayer2());
         }
 
         [Test]
         public void SwapPlayers()
         {
-            _pageObject.OpenPage()
+            _ticTacToePageObject.OpenPage()
                 .ClickSwapButton();
             
-            Assert.True(_pageObject.IsPlayer2IconDisplayed());
+            Assert.True(_ticTacToePageObject.IsPlayer2IconDisplayed());
+        }
+        
+        [Test]
+        public void OpenAds()
+        {
+            _ticTacToePageObject.OpenPage()
+                .ClickOnAds();
+            
+            Thread.Sleep(1000);
+            
+            Assert.AreNotEqual("https://playtictactoe.org/", _webDriver.Url);
         }
     }
 }

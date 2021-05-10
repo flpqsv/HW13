@@ -6,7 +6,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace HW13
 {
-    public class PageObject
+    public class TicTacToePageObject
     {
         private IWebDriver _webDriver;
 
@@ -30,28 +30,31 @@ namespace HW13
         private static readonly By _bottomMarked = By.XPath(".//div[@class = 'square bottom']/div[last()]");
         private static readonly By _bottomRightMarked = By.XPath(".//div[@class = 'square bottom right']/div[last()]");
 
-        private static readonly By _playerXscore = By.XPath("//p[@class='player1']/span[@class='score']");
-        private static readonly By _tiesScore = By.XPath("//p[@class='ties']/span[@class='score']");
-        private static readonly By _playerOscore = By.XPath("//p[@class='player2']/span[@class='score']");
+        private static readonly By _playerXscore = By.XPath("//body/div[4]/p[1]/span[4]");
+        private static readonly By _tiesScore = By.XPath("//body/div[4]/p[2]/span[1]");
+        private static readonly By _playerOscore = By.XPath("//body/div[4]/p[3]/span[4]");
         private static readonly By _swapButton = By.XPath("//div[@class='swap']");
         private static readonly By _onePlayerIcon = By.CssSelector("[class='p1']");
         private static readonly By _twoPlayersIcon = By.CssSelector("[class='p2']");
         private static readonly By _twoPlayersMode = By.CssSelector("[class='scores p1']");
 
-        public PageObject(IWebDriver webDriver)
+        private static readonly By _ads = By.XPath("//body/div[5]/ins[1]");
+
+        public TicTacToePageObject(IWebDriver webDriver)
         {
             _webDriver = webDriver;
         }
 
-        public PageObject OpenPage()
+        public TicTacToePageObject OpenPage()
         {
             _webDriver.Navigate().GoToUrl("https://playtictactoe.org/");
             return this;
         }
 
-        public PageObject ClickTopLeft()
+        public TicTacToePageObject ClickTopLeft()
         {
             _webDriver.FindElement(_topLeftBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -61,9 +64,10 @@ namespace HW13
             return isMarked;
         }
 
-        public PageObject ClickTop()
+        public TicTacToePageObject ClickTop()
         {
             _webDriver.FindElement(_topBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -73,9 +77,10 @@ namespace HW13
             return isMarked;
         }
 
-        public PageObject ClickTopRight()
+        public TicTacToePageObject ClickTopRight()
         {
             _webDriver.FindElement(_topRightBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -85,9 +90,10 @@ namespace HW13
             return isMarked;
         }
 
-        public PageObject ClickLeft()
+        public TicTacToePageObject ClickLeft()
         {
             _webDriver.FindElement(_leftBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -97,9 +103,10 @@ namespace HW13
             return isMarked;
         }
 
-        public PageObject ClickCentral()
+        public TicTacToePageObject ClickCentral()
         {
             _webDriver.FindElement(_centralBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -109,9 +116,10 @@ namespace HW13
             return isMarked;
         }
 
-        public PageObject ClickRight()
+        public TicTacToePageObject ClickRight()
         {
             _webDriver.FindElement(_rightBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -121,9 +129,10 @@ namespace HW13
             return isMarked;
         }
 
-        public PageObject ClickBottomLeft()
+        public TicTacToePageObject ClickBottomLeft()
         {
             _webDriver.FindElement(_bottomLeftBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -133,9 +142,10 @@ namespace HW13
             return isMarked;
         }
 
-        public PageObject ClickBottom()
+        public TicTacToePageObject ClickBottom()
         {
             _webDriver.FindElement(_bottomBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -145,9 +155,10 @@ namespace HW13
             return isMarked;
         }
 
-        public PageObject ClickBottomRight()
+        public TicTacToePageObject ClickBottomRight()
         {
             _webDriver.FindElement(_bottomRightBox).Click();
+            Thread.Sleep(500);
             return this;
         }
 
@@ -175,7 +186,7 @@ namespace HW13
             return score;
         }
 
-        public PageObject ClickSwapButton()
+        public TicTacToePageObject ClickSwapButton()
         {
             _webDriver.FindElement(_swapButton).Click();
             return this;
@@ -197,6 +208,12 @@ namespace HW13
         {
             var number = _webDriver.FindElement(_twoPlayersMode).Enabled;
             return number;
+        }
+
+        public TicTacToePageObject ClickOnAds()
+        {
+            _webDriver.FindElement(_ads).Click();
+            return this;
         }
     }
 }

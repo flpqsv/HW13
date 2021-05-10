@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9e28069-78b6-46b6-9355-6d365d849757" name="Default Changelist" comment="Updated">
+    <list default="true" id="e9e28069-78b6-46b6-9355-6d365d849757" name="Default Changelist" comment="A bit refactored.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HW13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HW13/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/HW13.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW13/PageObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/PageObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW13/ScoreTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/ScoreTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW13/SquareTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/SquareTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/bin/Debug/net48/HW13.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.dll" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/HW13/obj/Debug/net48/HW13.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +28,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../HW12/SeleniumTests/AccountSettingsTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../HW12/SeleniumTests/RegistrationTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F3AD61B0-698F-4A40-B5BD-2532AC72F249/ad/e105d022/ArrayList.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/HW13/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/HW13/ScoreTests.cs" />
         <option value="$PROJECT_DIR$/HW13/SquareTests.cs" />
+        <option value="$PROJECT_DIR$/HW13/ScoreTests.cs" />
         <option value="$PROJECT_DIR$/HW13/PageObject.cs" />
       </list>
     </option>
@@ -41,10 +47,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35006046" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29987907" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager" selected="2d138d46-d34c-4fc1-a31f-e08ac4a68d4b" />
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1620307334092</updated>
       <workItem from="1620307360345" duration="5195000" />
-      <workItem from="1620381655747" duration="8212000" />
+      <workItem from="1620381655747" duration="8246000" />
+      <workItem from="1620652077541" duration="9069000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1620393218674</created>
@@ -63,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620393218674</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="A bit refactored.">
+      <created>1620430153473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620430153474</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,7 +91,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="A bit refactored." />
+    <option name="LAST_COMMIT_MESSAGE" value="A bit refactored." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1384" y="525" key="Github.ShareDialog" timestamp="1620390027797">
@@ -85,9 +103,73 @@
       <screen x="0" y="23" width="2560" height="1293" />
     </state>
     <state x="1262" y="334" key="Github.UntrackedFilesDialog/0.23.2560.1293@0.23.2560.1293" timestamp="1620390048308" />
-    <state x="1108" y="348" key="Vcs.Push.Dialog.v2" timestamp="1620393227910">
+    <state width="1685" height="415" key="GridCell.Tab.0.bottom" timestamp="1620671209035">
       <screen x="0" y="23" width="2560" height="1293" />
     </state>
-    <state x="1108" y="348" key="Vcs.Push.Dialog.v2/0.23.2560.1293@0.23.2560.1293" timestamp="1620393227910" />
+    <state width="1685" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209035" />
+    <state width="1685" height="415" key="GridCell.Tab.0.center" timestamp="1620671209035">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.0.center/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209035" />
+    <state width="1685" height="415" key="GridCell.Tab.0.left" timestamp="1620671209034">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.0.left/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209034" />
+    <state width="1685" height="415" key="GridCell.Tab.0.right" timestamp="1620671209035">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.0.right/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209035" />
+    <state width="1685" height="415" key="GridCell.Tab.1.bottom" timestamp="1620671209036">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.1.bottom/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209036" />
+    <state width="1685" height="415" key="GridCell.Tab.1.center" timestamp="1620671209036">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.1.center/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209036" />
+    <state width="1685" height="415" key="GridCell.Tab.1.left" timestamp="1620671209035">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.1.left/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209035" />
+    <state width="1685" height="415" key="GridCell.Tab.1.right" timestamp="1620671209036">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.1.right/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209036" />
+    <state width="1685" height="415" key="GridCell.Tab.2.bottom" timestamp="1620671209037">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.2.bottom/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209037" />
+    <state width="1685" height="415" key="GridCell.Tab.2.center" timestamp="1620671209036">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.2.center/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209036" />
+    <state width="1685" height="415" key="GridCell.Tab.2.left" timestamp="1620671209036">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.2.left/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209036" />
+    <state width="1685" height="415" key="GridCell.Tab.2.right" timestamp="1620671209037">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.2.right/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209037" />
+    <state width="1685" height="415" key="GridCell.Tab.3.bottom" timestamp="1620671209038">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.3.bottom/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209038" />
+    <state width="1685" height="415" key="GridCell.Tab.3.center" timestamp="1620671209038">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.3.center/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209038" />
+    <state width="1685" height="415" key="GridCell.Tab.3.left" timestamp="1620671209037">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.3.left/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209037" />
+    <state width="1685" height="415" key="GridCell.Tab.3.right" timestamp="1620671209038">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state width="1685" height="415" key="GridCell.Tab.3.right/0.23.2560.1293@0.23.2560.1293" timestamp="1620671209038" />
+    <state x="1108" y="348" key="Vcs.Push.Dialog.v2" timestamp="1620430158617">
+      <screen x="0" y="23" width="2560" height="1293" />
+    </state>
+    <state x="1108" y="348" key="Vcs.Push.Dialog.v2/0.23.2560.1293@0.23.2560.1293" timestamp="1620430158617" />
   </component>
 </project>

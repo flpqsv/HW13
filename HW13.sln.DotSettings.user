@@ -1,7 +1,16 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ee401d2b_002Ddc17_002D45b2_002Db848_002Dfd609f26ecf4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2d138d46_002Dd34c_002D4fc1_002Da31f_002De08ac4a68d4b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GoToMainPage" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::F603ECD4-B110-4347-8A8F-8C04D5FA5346::.NETFramework,Version=v4.8::HW13.ScoresTests&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::F603ECD4-B110-4347-8A8F-8C04D5FA5346::.NETFramework,Version=v4.8::HW13.SquareTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2dcc605e_002D7dea_002D4b01_002D94ac_002D0a427d941702/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GoToMainPage #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::F603ECD4-B110-4347-8A8F-8C04D5FA5346::.NETFramework,Version=v4.8::HW13.ScoresTests.GoToMainPage&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=57c3386a_002D8558_002D4ea8_002D9711_002Dfcd1ba302468/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GoToMainPage #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Project Location="/Users/Mabelle/Desktop/HW13/HW13" Presentation="&amp;lt;HW13&amp;gt;" /&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	</wpf:ResourceDictionary>
